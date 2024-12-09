@@ -1,16 +1,14 @@
 package com.logisticscraft.occlusionculling.tests;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
 
 import com.logisticscraft.occlusionculling.OcclusionCullingInstance;
 import com.logisticscraft.occlusionculling.util.DummyWorld;
 import com.logisticscraft.occlusionculling.util.MultiArrayCache;
 import com.logisticscraft.occlusionculling.util.RayUtil;
 import com.logisticscraft.occlusionculling.util.Vec3d;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DiagonalLineTest {
 
@@ -72,5 +70,5 @@ public class DiagonalLineTest {
             }
         }
     }
-    
+
 }

@@ -1,11 +1,12 @@
 package com.logisticscraft.occlusionculling.util;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
 import com.logisticscraft.occlusionculling.util.DataAccess.AccessType;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RayUtil {
 
@@ -26,5 +27,5 @@ public class RayUtil {
             assertEquals(new DataAccess(AccessType.CACHEWRITE, block.x-Math.floor(camera.x), block.y-Math.floor(camera.y), block.z-Math.floor(camera.z)), access.get(access.size()-1));
         return true;
     }
-    
+
 }

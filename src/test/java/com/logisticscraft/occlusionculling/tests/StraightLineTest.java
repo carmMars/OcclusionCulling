@@ -1,15 +1,15 @@
 package com.logisticscraft.occlusionculling.tests;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
 
 import com.logisticscraft.occlusionculling.OcclusionCullingInstance;
 import com.logisticscraft.occlusionculling.util.DummyWorld;
 import com.logisticscraft.occlusionculling.util.MultiArrayCache;
 import com.logisticscraft.occlusionculling.util.RayUtil;
 import com.logisticscraft.occlusionculling.util.Vec3d;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StraightLineTest {
 
@@ -70,7 +70,7 @@ public class StraightLineTest {
             }
         }
     }
-    
+
     @Test
     public void testInPositiveZ() {
         DummyWorld world = new DummyWorld();
@@ -99,7 +99,7 @@ public class StraightLineTest {
             }
         }
     }
-    
+
     @Test
     public void testInNegativeX() {
         DummyWorld world = new DummyWorld();
@@ -157,7 +157,7 @@ public class StraightLineTest {
             }
         }
     }
-    
+
     @Test
     public void testInNegativeZ() {
         DummyWorld world = new DummyWorld();
@@ -187,5 +187,5 @@ public class StraightLineTest {
         }
     }
 
-    
+
 }
